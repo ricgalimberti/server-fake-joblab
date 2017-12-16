@@ -3,7 +3,7 @@ var faker                   = require('faker');
 
 var flights = [];
 
-for (var i = 1; i <= 40; i++) {
+for (var i = 1; i <= 20; i++) {
     var date = faker.date.future(1);
     var day = (date.getDay() + 1);
     var month = (date.getMonth() + 1);
@@ -17,7 +17,7 @@ for (var i = 1; i <= 40; i++) {
         name: faker.random.arrayElement(['Airlines ', 'Flights ']) + faker.company.companyName(),
         shorDescription: faker.lorem.paragraph(),
         longDescription: faker.lorem.paragraphs(),
-        image: faker.image.business(),
+        image: faker.image.city(faker.random.number({ min: 300, max: 400 })),
         destination: faker.random.arrayElement([faker.address.city(), faker.address.country()]),
         price: price.replace('.', ','),
         departureDate: (day > 9 ? day : '0' + day) + '/' + (month > 9 ? month : '0' + month) + '/' + year,
