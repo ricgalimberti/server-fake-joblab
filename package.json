@@ -4,7 +4,7 @@
   "author": "Gabriel Mayta",
   "license": "MIT",
   "scripts": {
-    "server": "node ./server"
+    "start": "npm i && node ./server"
   },
   "repository": {
     "type": "git",
