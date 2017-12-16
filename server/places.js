@@ -3,9 +3,9 @@ var faker                   = require('faker');
 
 var places = [];
 
-for (var i = 0; i < 40; i++) {
+for (var i = 1; i <= 40; i++) {
     places.push({
-        id: faker.random.uuid(),
+        id: i,
         name: faker.address.city(),
         shorDescription: faker.lorem.paragraph(),
         longDescription: faker.lorem.paragraphs(),

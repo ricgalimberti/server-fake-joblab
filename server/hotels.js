@@ -3,10 +3,10 @@ var faker                   = require('faker');
 
 var hotels = [];
 
-for (var i = 0; i < 40; i++) {
+for (var i = 1; i <= 40; i++) {
     hotels.push({
-        id: faker.random.uuid(),
-        name: 'Hotel' + faker.company.companyName(),
+        id: i,
+        name: faker.random.arrayElement(['hotel ', 'Hotel & Spa ', 'Resort ']) + faker.company.companyName(),
         stars: faker.random.number({ min: 1, max: 5}),
         shorDescription: faker.lorem.paragraph(),
         longDescription: faker.lorem.paragraphs(),
@@ -16,7 +16,9 @@ for (var i = 0; i < 40; i++) {
         city: faker.address.city(),
         zipCode: faker.address.zipCode(),
         phone: faker.phone.phoneNumber(),
-        email: faker.internet.email()
+        email: faker.internet.email(),
+        website: 'http://www.' + faker.internet.domainName(),
+        rooms: faker.random.number({ min: 100, max: 600 })
     });
 }
 

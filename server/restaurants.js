@@ -3,9 +3,9 @@ var faker                   = require('faker');
 
 var restaurants = [];
 
-for (var i = 0; i < 40; i++) {
+for (var i = 1; i <= 40; i++) {
     restaurants.push({
-        id: faker.random.uuid(),
+        id: i,
         name: faker.random.arrayElement(['Restaurant ', 'Food ']) + faker.company.companyName(),
         shorDescription: faker.lorem.paragraph(),
         longDescription: faker.lorem.paragraphs(),
@@ -16,7 +16,8 @@ for (var i = 0; i < 40; i++) {
         city: faker.address.city(),
         zipCode: faker.address.zipCode(),
         phone: faker.phone.phoneNumber(),
-        email: faker.internet.email()
+        email: faker.internet.email(),
+        website: 'http://www.' + faker.internet.domainName()
     });
 }
 

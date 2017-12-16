@@ -1,13 +1,14 @@
+var path                        = require('path');
 var jsonServer                  = require('json-server');
 var path                        = require('path');
-var hotels                      = require('./hotels');
-var restaurants                 = require('./restaurants');
-var flights                     = require('./flights');
-var places                      = require('./places');
+var hotels                      = require(path.join(__dirname, 'hotels'));
+var restaurants                 = require(path.join(__dirname, 'restaurants'));
+var flights                     = require(path.join(__dirname, 'flights'));
+var places                      = require(path.join(__dirname, 'places'));
 
 
 var server = jsonServer.create();
-var router = jsonServer.router('db.json');
+var router = jsonServer.router(path.join(__dirname, 'db.json'));
 var middlewares = jsonServer.defaults();
 
 
