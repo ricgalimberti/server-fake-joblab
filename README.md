@@ -9,7 +9,7 @@ npm start
 ## Endpoints:
 
 ```
-[localhost:3004/hotels] (http://localhost:3004/hotels)
+* [localhost:3004/hotels] (http://localhost:3004/hotels)
 
 localhost:3004/restaurants
 
