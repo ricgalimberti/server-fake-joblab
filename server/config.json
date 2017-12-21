@@ -1,0 +1,6 @@
+{
+    "port": 3002,
+    "routes": "./server/routes.json",
+    "read-only": true,
+    "delay": 200
+}

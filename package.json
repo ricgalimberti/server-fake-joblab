@@ -4,15 +4,17 @@
   "author": "Gabriel Mayta",
   "license": "MIT",
   "scripts": {
-    "start": "npm i && node ./server"
+    "start": "json-server ./server/db.js -c ./server/config"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/grandemayta/server-fake.git"
   },
-  "devDependencies": {
+  "dependencies": {
+    "currency.js": "^1.0.1",
     "faker": "^4.1.0",
     "json-server": "^0.12.1",
-    "path": "^0.12.7"
+    "lodash": "^4.17.4",
+    "moment": "^2.20.1"
   }
 }
