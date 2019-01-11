@@ -1,14 +1,14 @@
 {
-  "name": "server-fake",
+  "name": "server-fake-joblab",
   "version": "1.0.0",
-  "author": "Gabriel Mayta",
+  "author": "Riccardo Galimberti",
   "license": "MIT",
   "scripts": {
     "start": "json-server ./server/db.js -c ./server/config"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/grandemayta/server-fake.git"
+    "url": "git+https://github.com/ricgalimberti/server-fake-joblab"
   },
   "dependencies": {
     "currency.js": "^1.0.1",
